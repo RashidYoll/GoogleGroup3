@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Completed_Tasks</fullName>
+    <columns>NAME</columns>
+    <columns>Due__c</columns>
+    <columns>Status__c</columns>
+    <columns>Synced__c</columns>
+    <columns>Task_Id__c</columns>
+    <columns>Tasklist__c</columns>
+    <columns>Completed__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Completed__c</field>
+        <operation>lessOrEqual</operation>
+        <value>3/13/2023</value>
+    </filters>
+    <label>Completed Tasks</label>
+</ListView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Synced</fullName>
+    <columns>NAME</columns>
+    <columns>Due__c</columns>
+    <columns>Status__c</columns>
+    <columns>Synced__c</columns>
+    <columns>Task_Id__c</columns>
+    <columns>Tasklist__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Synced__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Synced Tasks</label>
+</ListView>
