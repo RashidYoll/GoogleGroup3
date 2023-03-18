@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tasklist__c</fullName>
+    <description>Master Detail relationship to the Google Tasklist object</description>
+    <externalId>false</externalId>
+    <label>Tasklist</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Google_Tasklist__c.Synced__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Google_Tasklist__c</referenceTo>
+    <relationshipLabel>Google Tasks</relationshipLabel>
+    <relationshipName>Google_Tasks</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>
